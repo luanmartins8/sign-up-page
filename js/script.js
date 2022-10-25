@@ -83,12 +83,8 @@ document.getElementById('cep')
 const cadastroBtn = document.getElementById('btn')
 cadastroBtn.addEventListener("click", cadastroSucess)
 function cadastroSucess() {
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Your work has been saved',
-        showConfirmButton: false,
-        timer: 1500
-    })
-    return
+
+    swal("Logado com sucesso!", "", "success");
+    
+    return
 }
